@@ -1,0 +1,152 @@
+/* RESET GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTRUTURA BASE */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+main {
+  flex: 1;
+}
+
+/* ================= HEADER ================= */
+
+header {
+  background-image: linear-gradient(to bottom, #000, #080808, #101010, #181818, #202020);
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font: italic bold 40px/1.5 "Times New Roman", serif;
+}
+
+.slogan {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+/* ================= NAVEGAÇÃO ================= */
+
+nav {
+  margin-top: 15px;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ================= SECTIONS ================= */
+
+section {
+  background: white;
+  margin: 20px;
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+/* ================= BOTÃO WHATSAPP ================= */
+
+.whatsapp {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 15px 30px;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #111;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer .mini_logo,
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.mini_logo {
+  font: italic bold 20px/1.5 "Times New Roman", serif;
+}
+
+.footer a {
+  display: block;
+  color: #cfa45d;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* ================= LISTAS ================= */
+
+li {
+  list-style-type: none;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+  .slogan {
+    text-align: center;
+  }
+
+  nav {
+    gap: 15px;
+  }
+}
